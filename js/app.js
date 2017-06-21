@@ -26,8 +26,23 @@
     }
 }());
 
+var model = {
+    attendance: JSON.parse(localStorage.attendance)
+};
 
+var view = {
+
+};
+
+var octopus = {
+    init: function() {
+        console.log(model.attendance);
+    }
+};
+
+octopus.init();
 /* STUDENT APPLICATION */
+/*
 $(function() {
     var attendance = JSON.parse(localStorage.attendance),
         $allMissed = $('tbody .missed-col'),
@@ -82,3 +97,4 @@ $(function() {
 
     countMissing();
 }());
+*/
